@@ -54,3 +54,77 @@ img{-ms-interpolation-mode:bicubic; max-width:100%;}/*防止windows缩放图片�
 .select .pitch_on{ background:url(../images/s_goods_pitch.png) no-repeat center center #ff900d;border:solid 1px #ff900d; background-size:22px 22px; }
 .account_info li{ overflow: hidden;position: relative; border-bottom:solid 1px #eee; padding: 0 4%;line-height: 45px; }
 .account_info li .info_name{color:#9a9a9a;float: left; display:inline-block;margin-right: 5%;color: #333; font-size: 0.7rem;}
+
+.didi-dialog-wall {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9998;
+	width: 100%;
+	box-shadow: 0 0 400px 400px rgba(0,0,0,.4);
+}
+.didi-dialog-wrap {
+	box-sizing: border-box;
+	text-align: center;
+	position: absolute;
+	border-radius: 5px;
+	-webkit-border-radius: 8px;
+	background: #fff;
+	z-index: 9999;
+	width: 80%;
+	left: 10%;
+	top: 300px;
+}
+.didi-dialog-box{
+	padding: 20px 16px;
+  width: 100%;
+}
+.didi_dialog_icon{
+	margin: 20px 0px 12px 0;
+}
+.didi-dialog-p {
+	margin: 0;
+	z-index: 10011;
+	color: #666;
+	font-size: 16px;
+  text-align: center;
+}
+.didi-dialog-footer {
+	margin: 18px 0
+}
+
+.btn-bule {
+	cursor: default;
+	display: inline-block;
+	width: 120px;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	background-clip: padding-box;
+	box-shadow: 0 0 1px 0 rgba(0,0,0,0.01) inset;
+	color: #fff;
+	border: 1px solid #0a9dc7;
+	background: #0a9dc7;
+  float: left;
+  margin-right: 20px;
+}
+.btn-red {
+	cursor: default;
+	display: inline-block;
+	width: 120px;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	background-clip: padding-box;
+	box-shadow: 0 0 1px 0 rgba(0,0,0,0.01) inset;
+	color: #fff;
+	border: 1px solid #ff0000;
+	background: #ff0000;
+  float: left;
+}

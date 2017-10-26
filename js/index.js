@@ -6,7 +6,9 @@ var app =
           cartData :[],
           checkedAll : false,
           totalAmount :0,
-          actionShow : true
+          actionShow : true,
+          modalShow : false,
+          modalMsg : ""
         },
         filters:{
 
@@ -61,8 +63,18 @@ var app =
           doneClick : function () {
             this.actionShow = true ;
           },
-          selectDelete : function (index) {
-            this.cartData.splice(index,1);
+          selectDelete : function () {
+            //this.cartData.splice(index,1);
+            this.modalMsg =  "您确定要删除吗？";
+            this.modalShow = true;
+          },
+          modalClick : function (data) { // 响应组件的呼喊
+              this.modalShow = false;
+          },
+          modalDel : function (data) { // 响应组件的呼喊
+              this.modalShow = false;
+              this.cartData.splice(data,1);
+          }
         },
         watch: {
 
