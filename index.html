@@ -1,0 +1,78 @@
+<!doctype html>
+<html >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-wap-web-app-capable" content="yes">
+	<meta name="apple-wap-web-app-status-bar-style" content="black-translucent">
+	<title>购物车</title>
+	<!-- ionic框架  css -->
+	<link href="css/weixin.css" rel="stylesheet" type="text/css" />
+	<link href="css/ionic.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/signin.css" rel="stylesheet" type="text/css" />
+	<link href="css/share.css" rel="stylesheet" type="text/css" />
+	<!-- ionic框架  js   -->
+
+</head>
+<body>
+<div id="app">
+	<div class="header_box">
+	  <div class="bar bar-header">
+      <a class="back" href="#"><button class="button button-icon icon ion-ios-arrow-left"></button></a>
+      <div id="tite" class="h1 title" style=" width: 72%; margin: 0 auto; ">{{ title }}</div>
+      <a class="rig_shai" href="javascript:void(0)" v-if="actionShow" @click="editClick" style="margin-right: 2%;position: absolute; top: 5px; right: 3%;">编辑</a>
+			<a class="rig_shai" href="javascript:void(0)" v-if="!actionShow" @click="doneClick" style="margin-right: 2%;position: absolute; top: 5px; right: 3%;">完成</a>
+	  </div>
+	</div>
+	<div style="height:44px;"></div>
+	<div class="commodity_list_box">
+		<div class="cart_top">
+	    <span>商品清单</span>
+	    <p>已免运费</p>
+	    <div class="clear"></div>
+	  </div>
+		<div class="commodity_box">
+			<div class="commodity_list">
+				<ul class="commodity_list_term">
+
+					<li class="select"  v-for="(item,index) in cartData">
+	          <em aem="0" cart_id="84" :class="{'pitch_on':item.checked}" @click="selectClick(item)"></em>
+	          <img :src="item.goods_thumb" />
+	          <div class="div_center">
+	            <h4>{{ item.goods_name }}</h4>
+	            <span>重量：{{ item.goods_weight }}克</span>
+	            <p class="now_value"><i>￥</i><b class="qu_su">{{ item.shop_price }}</b></p>
+	          </div>
+	          <div class="div_right">
+	            <i @click="changeMoney(item,-1)">-</i>
+	            <span class="zi" v-model="item.goods_number">{{item.goods_number}}</span>
+	            <i @click="changeMoney(item,1)">+</i>
+	          </div>
+	        </li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div style="height:55px;"></div>
+	<div class="settle_box">
+	  <dl class="all_check select">
+	      <dt>
+					<span id="all_pitch_on" :class="{'pitch_on':checkedAll}" @click="selectClickAll(true)"></span><em>全选</em>
+					<em @click="selectClickAll(false)">取消全选</em>
+				</dt>
+	    </dl>
+	    <dl class="total_amount" v-if="actionShow">
+	      <dt>合计：<p id="total_price">¥<b>{{ totalAmount }}</b></p></dt>
+	        <dd>不含运费</dd>
+	    </dl>
+	    <a class="settle_btn" href="javascript:void(0);" v-if="actionShow">结算</a>
+	    <a class="settle_btn" href="javascript:void(0);" v-if="!actionShow" @click="selectDelete(index)">删除</a>
+	</div>
+</div>
+</body>
+</html>
+<script src="./js/vue.min.js"></script>
+<script src="./js/axios.min.js"></script>
+<script src="./js/index.js"></script>

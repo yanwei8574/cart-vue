@@ -1,0 +1,71 @@
+{
+  "success": true,
+  "data": [
+    {
+      "goods_id": 1,
+      "goods_sn": "ECS000000",
+      "goods_name": "KD876",
+      "goods_number": 1,
+      "goods_weight": 500,
+      "market_price": 1665.6,
+      "shop_price": 1388,
+      "goods_thumb": "images/1_thumb_G_1240902890710.jpg",
+      "last_update": 1269589545
+    },
+    {
+      "goods_id": 4,
+      "goods_sn": "ECS000004",
+      "goods_name": "诺基亚N85原装充电器",
+      "goods_number": 17,
+      "goods_weight": 35.3,
+      "market_price": 69.6,
+      "shop_price": 58,
+      "goods_thumb": "images/4_thumb_G_1241422402467.jpg",
+      "last_update": 1242110662
+    },
+    {
+      "goods_id": 3,
+      "goods_sn": "ECS000002",
+      "goods_name": "诺基亚原装5800耳机",
+      "goods_number": 5,
+      "goods_weight": 10,
+      "market_price": 81.6,
+      "shop_price": 68,
+      "goods_thumb": "images/3_thumb_G_1241422082679.jpg",
+      "last_update": 1241972255
+    },
+    {
+      "goods_id": 5,
+      "goods_sn": "ECS000005",
+      "goods_name": "索爱原装M2卡读卡器",
+      "goods_number": 8,
+      "goods_weight": 5,
+      "market_price": 24,
+      "shop_price": 20,
+      "goods_thumb": "images/5_thumb_G_1241422518886.jpg",
+      "last_update": 1241972241
+    },
+    {
+      "goods_id": 6,
+      "goods_sn": "ECS000006",
+      "goods_name": "三星（SAMSUNG）存储卡32GB",
+      "goods_number": 2,
+      "goods_weight": 5,
+      "market_price": 99.9,
+      "shop_price": 79.9,
+      "goods_thumb": "images/6_thumb_G_1241422402468.jpg",
+      "last_update": 1241972238
+    },
+    {
+      "goods_id": 7,
+      "goods_sn": "ECS000007",
+      "goods_name": "诺基亚N85原装立体声耳机HS-82",
+      "goods_number": 2,
+      "goods_weight": 10,
+      "market_price": 120,
+      "shop_price": 100,
+      "goods_thumb": "images/7_thumb_G_1241422785492.jpg",
+      "last_update": 1241422573
+    }
+  ]
+}
